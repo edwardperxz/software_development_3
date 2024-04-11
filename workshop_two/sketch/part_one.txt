@@ -1,0 +1,97 @@
+Employee: Superclase
+name (String)
+id (Int)
+baseSalary (double)
+Métodos-Employee:
+calculateSalary() (double)
+
+EmployeeFullTime: Subclase de employee
+bonusSalary (double)
+Métodos-EmployeeFullTime:
+requestVacation() (void)
+registerAttendance() (void)
+receiveBonus() (void)
+
+EmployeeHalfTime: Subclase de employee
+hoursWorked (int)
+Métodos-EmployeeHalfTime:
+requestPermission() (void)
+organizeInventory() (void)
+attendCustomer() (void)
+
+Manager: Subclase de employee
+department (String)
+Métodos-Manager:
+assignTask() (void)
+manageTeam() (void)
+generateReport() (void)
+
+Secretary: Subclase de employee
+timeCompleted (boolean)
+Métodos-Secretary:
+manageAgenda() (void)
+composeCorrespondence() (void)
+organizeDocuments() (void)
+
+DataAnalyst: Subclase de employee
+partTime (boolean)
+Métodos-DataAnalyst:
+analyzeData() (void)
+generateAnalysisReport() (void)
+developPredictiveModels() (void)
+
+SupportTechnician: Subclase de employee
+timeCompleted (boolean)
+Métodos-SupportTechnician:
+resolveIncidents() (void)
+updateSoftware() (void)
+provideGuidance() (void)
+
+AdministrativeAssistant: Subclase de employee
+timeCompleted (boolean)
+Métodos-AdministrativeAssistant:
+manageDocumentation() (void)
+coordinateMeetings() (void)
+handleCalls() (void)
+
+SoftwareEngineer: Subclase de employee
+timeCompleted (boolean)
+Métodos-SoftwareEngineer:
+developSoftware() (void)
+performTesting() (void)
+maintainSystems() (void)
+
+GraphicDesigner: Subclase de employee
+timeCompleted (boolean)
+Métodos-GraphicDesigner:
+designVisualMaterial() (void)
+collaborateOnCreativeProjects() (void)
+presentDesignProposals() (void)
+
+FinancialConsultant: Subclase de employee
+timeCompleted (boolean)
+Métodos-FinancialConsultant:
+adviseClients() (void)
+conductMarketAnalysis() (void)
+prepareFinancialReports() (void)
+
+Accountant: Subclase de employee
+timeCompleted (boolean)
+Métodos-Accountant:
+generateReports() (void)
+reviewDocuments() (void)
+prepareTaxDocuments() (void)
+
+HumanResources: Subclase de employee
+timeCompleted (boolean)
+Métodos-HumanResources:
+recruitPersonnel() (void)
+conductTraining() (void)
+evaluatePerformance() (void)
+
+ProjectCoordinator: Subclase de employee
+timeCompleted (boolean)
+ProjectCoordinator-Metodos:
+planProjects() 		(void)
+superviseExecution() 	(void)
+reportProgress() 	(void)
