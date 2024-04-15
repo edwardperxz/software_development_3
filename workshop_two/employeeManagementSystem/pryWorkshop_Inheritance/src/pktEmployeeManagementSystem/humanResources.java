@@ -1,4 +1,4 @@
 package pktEmployeeManagementSystem;
 
-public class empleados {
+public class humanResources {
 }
