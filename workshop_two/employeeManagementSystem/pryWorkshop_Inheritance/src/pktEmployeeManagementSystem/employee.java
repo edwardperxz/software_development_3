@@ -44,6 +44,9 @@ public class employee {
         frame.dispose();
     }
 
+    public employee(String name, int id, double baseSalary) {
+    }
+
     public double calculateSalary(double baseSalary) {
         return baseSalary;
     }
