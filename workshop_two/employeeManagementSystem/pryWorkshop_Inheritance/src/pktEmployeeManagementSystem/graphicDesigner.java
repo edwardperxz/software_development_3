@@ -7,7 +7,7 @@ public class graphicDesigner extends employeeHalfTime {
         this.graphicDesigner = graphicDesigner;
     }
     public void designVisualMaterial () {
-       System.out.println("Diagramas");
+        System.out.println("Diagramas");
     }
 
     public void colaborateOnCreativeProjects () {

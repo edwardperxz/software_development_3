@@ -9,14 +9,11 @@ public class employeeFullTime extends employee {
     }
 
     public void requestPermission() {
-        // Implementación para solicitar permiso
     }
 
     public void organizeInventory() {
-        // Implementación para organizar inventario
     }
 
     public void attendCustomer() {
-        // Implementación para atender clientes
     }
 }

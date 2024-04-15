@@ -8,15 +8,15 @@ public class employeeHalfTime extends employee {
         this.bonusSalary = bonusSalary;
     }
 
+    public employeeHalfTime(int hoursWorked) {
+    }
+
     public void requestVacation() {
-        // Implementación para solicitar vacaciones
     }
 
     public void registerAttendance() {
-        // Implementación para registrar asistencia
     }
 
     public void receiveBonus() {
-        // Implementación para recibir bono
     }
 }
