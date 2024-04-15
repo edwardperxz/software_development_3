@@ -16,9 +16,9 @@ public class employee {
         JPanel panel = new JPanel();
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
 
-        JTextField nameField = new JTextField(20);
-        JTextField idField = new JTextField(10);
-        JTextField salaryField = new JTextField(10);
+        JTextField nameField = new JTextField(50);
+        JTextField idField = new JTextField(16);
+        JTextField salaryField = new JTextField(16);
 
         panel.add(new JLabel("Enter employee name:"));
         panel.add(nameField);
