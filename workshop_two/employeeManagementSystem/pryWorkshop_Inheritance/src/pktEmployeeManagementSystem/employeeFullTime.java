@@ -18,7 +18,6 @@ public class employeeFullTime extends employee {
 
     @Override
     public double calculateTotalSalary() {
-        // Implementación para calcular el salario total de un empleado a tiempo completo
         return baseSalary * hoursWorked;
     }
 }

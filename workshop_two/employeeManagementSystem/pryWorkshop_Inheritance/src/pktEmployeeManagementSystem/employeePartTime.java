@@ -22,7 +22,6 @@ public class employeePartTime extends employee {
 
     @Override
     public double calculateTotalSalary() {
-        // Implementación para calcular el salario total de un empleado a tiempo parcial
         return baseSalary + bonusSalary;
     }
 }

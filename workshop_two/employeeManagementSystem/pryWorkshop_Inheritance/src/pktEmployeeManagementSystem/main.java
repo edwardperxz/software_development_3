@@ -2,81 +2,107 @@ package pktEmployeeManagementSystem;
 
 import java.util.Scanner;
 
-            public class Main {
-                public static void main(String[] args) {
-                    Scanner scanner = new Scanner(System.in);
-                    boolean exit = false;
+public class main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        boolean exit = false;
 
-                    while (!exit) {
-                        System.out.println("Welcome to Employee Management System");
-                        System.out.println("Select an option:");
-                        System.out.println("1. Calculate total salary for an employee");
-                        System.out.println("2. Calculate tax deductions for an accountant");
-                        System.out.println("3. Advise clients for a financial consultant");
-                        System.out.println("4. Design visual material for a graphic designer");
-                        System.out.println("5. Recruit employees for Human Resources");
-                        System.out.println("6. Assign tasks for a Manager");
-                        System.out.println("7. Coordinate tasks for a Project Coordinator");
-                        System.out.println("8. Manage agenda for a Secretary");
-                        System.out.println("9. Develop software for a Software Engineer");
-                        System.out.println("10. Resolve issues for a Support Technician");
-                        System.out.println("0. Exit");
+        employee employee = new employee("Jose Gonzalez", 1, 1000.0);
 
-                        int option = scanner.nextInt();
-                        scanner.nextLine(); // Consume the newline character
+        accountant accountant = new accountant("Julia Lopez", 2, 1400.0);
 
-                        switch (option) {
-                            case 1:
-                                System.out.println("Calculating total salary for an employee...");
-                                // Code to calculate total salary for an employee
-                                break;
-                            case 2:
-                                System.out.println("Calculating tax deductions for an accountant...");
-                                // Code to calculate tax deductions for an accountant
-                                break;
-                            case 3:
-                                System.out.println("Advising clients for a financial consultant...");
-                                // Code to advise clients for a financial consultant
-                                break;
-                            case 4:
-                                System.out.println("Designing visual material for a graphic designer...");
-                                // Code to design visual material for a graphic designer
-                                break;
-                            case 5:
-                                System.out.println("Recruiting employees for Human Resources...");
-                                // Code to recruit employees for Human Resources
-                                break;
-                            case 6:
-                                System.out.println("Assigning tasks for a Manager...");
-                                // Code to assign tasks for a Manager
-                                break;
-                            case 7:
-                                System.out.println("Coordinating tasks for a Project Coordinator...");
-                                // Code to coordinate tasks for a Project Coordinator
-                                break;
-                            case 8:
-                                System.out.println("Managing agenda for a Secretary...");
-                                // Code to manage agenda for a Secretary
-                                break;
-                            case 9:
-                                System.out.println("Developing software for a Software Engineer...");
-                                // Code to develop software for a Software Engineer
-                                break;
-                            case 10:
-                                System.out.println("Resolving issues for a Support Technician...");
-                                // Code to resolve issues for a Support Technician
-                                break;
-                            case 0:
-                                exit = true;
-                                break;
-                            default:
-                                System.out.println("Invalid option. Please try again.");
-                                break;
-                        }
-                    }
+        administrativeAssistant adminAssistant = new administrativeAssistant("Maria Ortega", 3, 900.0, true);
 
-                    scanner.close();
-                    System.out.println("Exiting Employee Management System...");
+        dataAnalyst dataAnalyst = new dataAnalyst("Michael Jarson", 4, 1200.0, "Data Science");
+
+        financialConsultant financeConsultant = new financialConsultant("Wilson Balls", 5, 2000.0, "Financial Planning");
+
+        graphicDesigner graphicDesigner = new graphicDesigner("Charlie Charles", 6, 1000.0, true);
+
+        humanResources hr = new humanResources("Gloria Trevi", 7, 2300.0, "Recruitment");
+
+        manager manager = new manager("Tulio Patiño", 8, 3000.0, "Project Management");
+
+        secretary secretary = new secretary("Linda Serrano", 9, 3000.0, true);
+
+        softwareEngineer softwareEngineer = new softwareEngineer("Farrokh Bulsara", 5, 2500.0, 40, "Java");
+
+        supportTechnician supportTechnician = new supportTechnician("Austin Post", 10, "Hardware");
+
+
+        while (!exit) {
+            System.out.println("Welcome to Employee Management System");
+            System.out.println("Select an option:");
+            System.out.println("1. Calculate total salary for Employee");
+            System.out.println("2. Display employee information");
+            System.out.println("3. Manage agenda for Secretary");
+            System.out.println("4. Calculate tax deductions for Accountant");
+            System.out.println("5. Manage documentation for Administrative Assistant");
+            System.out.println("6. Analyze data for Data Analyst");
+            System.out.println("7. Advise clients for Financial Consultant");
+            System.out.println("8. Design visual material for Graphic Designer");
+            System.out.println("9. Recruit personnel for Human Resources");
+            System.out.println("10. Assign tasks for Manager");
+            System.out.println("11. Develop software for Software Engineer");
+            System.out.println("12. Resolve issues for Support Technician");
+            System.out.println("0. Exit");
+
+            int option = scanner.nextInt();
+            scanner.nextLine();
+
+            switch (option) {
+                case 1:
+                    System.out.println("Total salary for Employee: $" + employee.calculateTotalSalary());
+                    break;
+                case 2:
+                    employee.displayEmployeeInformation();
+                    break;
+                case 3:
+                    secretary.manageAgenda();
+                    break;
+                case 4:
+                    System.out.println("Tax deductions for Accountant: $" + accountant.calculateTaxDeductions());
+                    break;
+                case 5:
+                    adminAssistant.manageDocumentation();
+                    break;
+                case 6:
+                    dataAnalyst.analyzeData();
+                    break;
+                case 7:
+                    financeConsultant.adviseClients();
+                    break;
+                case 8:
+                    graphicDesigner.designVisualMaterial();
+                    break;
+                case 9:
+                    hr.recruitPersonnel();
+                    break;
+                case 10:
+                    manager.assignTasks();
+                    break;
+                case 11:
+                    softwareEngineer.developSoftware();
+                    break;
+                case 12:
+                    supportTechnician.resolveIssues();
+                    break;
+                case 0:
+                    exit = true;
+                    break;
+                default:
+                    System.out.println("Invalid option. Please try again.");
+                    break;
+            }
+            if (!exit) {
+                System.out.println("Do you want to continue? (yes/no)");
+                String choice = scanner.nextLine().toLowerCase();
+                if (!choice.equals("yes")) {
+                    exit = true;
                 }
-
-                }
+            }
+        }
+            scanner.close();
+            System.out.println("Exiting Employee Management System...");
+    }
+}

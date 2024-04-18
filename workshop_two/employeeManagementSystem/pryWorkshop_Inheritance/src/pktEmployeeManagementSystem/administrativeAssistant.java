@@ -16,8 +16,9 @@ public class administrativeAssistant extends employee {
         this.fullTime = fullTime;
     }
 
-    public void manageDocumentation() {
+    public Object manageDocumentation() {
         System.out.println("Managing documents...");
+        return null;
     }
 
     public void coordinateMeetings() {

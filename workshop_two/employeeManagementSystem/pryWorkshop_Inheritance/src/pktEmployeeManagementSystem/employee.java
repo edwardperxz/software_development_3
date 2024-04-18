@@ -43,9 +43,10 @@ public class employee {
         return baseSalary;
     }
 
-    public void displayEmployeeInformation() {
+    public Object displayEmployeeInformation() {
         System.out.println("Name: " + name);
         System.out.println("ID: " + id);
         System.out.println("Base Salary: " + baseSalary);
+        return null;
     }
 }

@@ -12,7 +12,6 @@ public class accountant {
     }
 
     public double calculateTaxDeductions() {
-        // Implementación para calcular las deducciones fiscales
         return salary * 0.15; // Ejemplo de cálculo de deducciones
     }
 }
