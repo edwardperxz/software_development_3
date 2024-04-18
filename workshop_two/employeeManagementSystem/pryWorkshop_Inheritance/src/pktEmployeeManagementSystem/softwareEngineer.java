@@ -1,16 +1,22 @@
 package pktEmployeeManagementSystem;
 
-public class softwareEngineer {
+public class softwareEngineer extends employeeFullTime {
+    private String programmingLanguage;
 
-        private boolean timeCompleted = true;
-           public void developSoftware() {
-                System.out.println("Ejecutando método: developSoftware");
-        }
-        public void performTesting() {
-            System.out.println("Ejecutando método: performTesting");
-        }
-        public void maintainSystem() {
-            System.out.println("Ejecutando método: maintainSystem");
-        }
+    public softwareEngineer(String name, int id, double baseSalary, int hoursWorked, String programmingLanguage) {
+        super(name, id, baseSalary, hoursWorked);
+        this.programmingLanguage = programmingLanguage;
+    }
+
+    public void developSoftware() {
+        System.out.println("Developing software using " + programmingLanguage);
+    }
+
+    public void performTesting() {
+        System.out.println("Performing testing and debugging");
+    }
+
+    public void maintainSystems() {
+        System.out.println("Maintaining software systems and applications");
+    }
 }
-

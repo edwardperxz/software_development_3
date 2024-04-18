@@ -1,20 +1,30 @@
 package pktEmployeeManagementSystem;
 
-public class financialConsultant extends employeeHalfTime {
-    private boolean FinancialConsultant=true;
-    public financialConsultant(int HoursWorked) {
-        super(HoursWorked);
-        this.FinancialConsultant = FinancialConsultant;
-    }
-    public void adviseClients () {
-        System.out.println("advise");
+public class financialConsultant extends employee {
+    private String financeExpertise;
+
+    public financialConsultant(String name, int id, double baseSalary, String financeExpertise) {
+        super(name, id, baseSalary);
+        this.financeExpertise = financeExpertise;
     }
 
-    public void conductMarketAnalysis () {
-        System.out.println("analysis");
+    public String getFinanceExpertise() {
+        return financeExpertise;
     }
 
-    public void prepareFinancialReports () {
-        System.out.println("reports");
+    public void setFinanceExpertise(String financeExpertise) {
+        this.financeExpertise = financeExpertise;
+    }
+
+    public void adviseClients() {
+        System.out.println("Advising clients...");
+    }
+
+    public void conductMarketAnalysis() {
+        System.out.println("Conducting market analysis...");
+    }
+
+    public void prepareFinancialReports() {
+        System.out.println("Preparing financial reports...");
     }
 }

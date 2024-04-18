@@ -1,21 +1,30 @@
 package pktEmployeeManagementSystem;
 
-public class graphicDesigner extends employeeHalfTime {
-    private boolean graphicDesigner=true;
-    public graphicDesigner(int HoursWorked) {
-        super(HoursWorked);
+public class graphicDesigner extends employee {
+    private boolean graphicDesigner;
+
+    public graphicDesigner(String name, int id, double baseSalary, boolean graphicDesigner) {
+        super(name, id, baseSalary);
         this.graphicDesigner = graphicDesigner;
     }
-    public void designVisualMaterial () {
-        System.out.println("Diagramas");
+
+    public boolean isGraphicDesigner() {
+        return graphicDesigner;
     }
 
-    public void colaborateOnCreativeProjects () {
-
-        System.out.println("tablas y gráficos");
+    public void setGraphicDesigner(boolean graphicDesigner) {
+        this.graphicDesigner = graphicDesigner;
     }
 
-    public void presentDesignProposals () {
-        System.out.println("Fotografias y imágenes");
+    public void designVisualMaterial() {
+        System.out.println("Designing visual material...");
+    }
+
+    public void collaborateOnCreativeProjects() {
+        System.out.println("Collaborating on creative projects...");
+    }
+
+    public void presentDesignProposals() {
+        System.out.println("Presenting design proposals...");
     }
 }

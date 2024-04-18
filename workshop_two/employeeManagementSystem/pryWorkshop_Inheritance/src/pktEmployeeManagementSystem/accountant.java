@@ -1,18 +1,18 @@
 package pktEmployeeManagementSystem;
 
 public class accountant {
+    private String name;
+    private int id;
+    private double salary;
 
-        private boolean timecompleted = true;
-        public void generateReports() {
-            System.out.println("Ejecutando método: generatingReports...");
-            System.out.println("Reporte generado con éxito.");
-        }
-        public void reviewDocuments() {
-            System.out.println("Ejecutando método: reviewDocuments...");
-            System.out.println("Documentos revisados con éxito.");
-        }
-        public void prepareTaxDocuments() {
-            System.out.println("Ejecutando método: prepareTaxDocuments...");
-            System.out.println("Documentos de impuestos preparados con éxito.");
-        }
+    public accountant(String name, int id, double salary) {
+        this.name = name;
+        this.id = id;
+        this.salary = salary;
+    }
+
+    public double calculateTaxDeductions() {
+        // Implementación para calcular las deducciones fiscales
+        return salary * 0.15; // Ejemplo de cálculo de deducciones
+    }
 }

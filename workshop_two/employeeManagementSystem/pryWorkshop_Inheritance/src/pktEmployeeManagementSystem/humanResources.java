@@ -1,18 +1,27 @@
 package pktEmployeeManagementSystem;
 
-public class accountant {
+public class humanResources extends employee {
+    private String hrSpecialization;
 
-    private boolean timecompleted = true;
-    public void generateReports() {
-        System.out.println("Ejecutando método: generatingReports...");
-        System.out.println("Reporte generado con éxito.");
+    public humanResources(String name, int id, double baseSalary, String hrSpecialization) {
+        super(name, id, baseSalary);
+        this.hrSpecialization = hrSpecialization;
     }
-    public void reviewDocuments() {
-        System.out.println("Ejecutando método: reviewDocuments...");
-        System.out.println("Documentos revisados con éxito.");
+
+    public String getHrSpecialization() {
+        return hrSpecialization;
     }
-    public void prepareTaxDocuments() {
-        System.out.println("Ejecutando método: prepareTaxDocuments...");
-        System.out.println("Documentos de impuestos preparados con éxito.");
+
+    public void setHrSpecialization(String hrSpecialization) {
+        this.hrSpecialization = hrSpecialization;
+    }
+
+    public void recruitPersonnel() {
+        System.out.println("Recruiting personnel...");
+    }
+
+    public void conductTraining() {
+        System.out.println("Conducting training sessions...");
     }
 }
+

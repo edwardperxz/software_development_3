@@ -8,12 +8,17 @@ public class employeeFullTime extends employee {
         this.hoursWorked = hoursWorked;
     }
 
-    public void requestPermission() {
+    public int getHoursWorked() {
+        return hoursWorked;
     }
 
-    public void organizeInventory() {
+    public void setHoursWorked(int hoursWorked) {
+        this.hoursWorked = hoursWorked;
     }
 
-    public void attendCustomer() {
+    @Override
+    public double calculateTotalSalary() {
+        // Implementación para calcular el salario total de un empleado a tiempo completo
+        return baseSalary * hoursWorked;
     }
 }
