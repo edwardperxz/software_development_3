@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { IonApp, IonRouterOutlet } from '@ionic/angular/standalone';
+import { Router, RouterModule } from '@angular/router';
+import { IonicModule } from '@ionic/angular';
+import { IonToolbar } from '@ionic/angular/standalone';
+import { FormsModule } from '@angular/forms';
 
 
 @Component({
@@ -7,10 +10,18 @@ import { IonApp, IonRouterOutlet } from '@ionic/angular/standalone';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
   standalone: true,
-  imports: [IonApp, IonRouterOutlet]
+  imports: [RouterModule,IonicModule,IonToolbar,FormsModule]
 })
 export class HeaderComponent  {
+  constructor (private router: Router) {}
+ 
+  openMapas()
+  {
+    this.router.navigate(['/mapas']);
+  }
 
-  constructor() { }
-
+  openRutas(){
+    this.router.navigate(['/rutas']);
+  }
 }
+

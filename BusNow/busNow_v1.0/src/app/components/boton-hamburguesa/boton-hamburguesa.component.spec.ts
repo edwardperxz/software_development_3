@@ -1,20 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
+import { BotonHamburguesaComponent } from './boton-hamburguesa.component';
 
-import { MapComponent } from './map.component';
-
-describe('MapComponent', () => {
-  let component: MapComponent;
-  let fixture: ComponentFixture<MapComponent>;
+describe('BotonHamburguesaComponent', () => {
+  let component: BotonHamburguesaComponent;
+  let fixture: ComponentFixture<BotonHamburguesaComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ MapComponent ],
+      declarations: [ BotonHamburguesaComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(MapComponent);
+    fixture = TestBed.createComponent(BotonHamburguesaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));
