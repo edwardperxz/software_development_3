@@ -1,11 +1,11 @@
 <ion-header    [translucent]="true">
   <ion-grid>
    <ion-toolbar>
-     <ion-title slot="start">
-       <img src="assets/BusNowLogo_Transparente.png" alt="Logo de la Compañía" style="height: 60px">
-     </ion-title>
+      <ion-buttons slot="start">
+        <ion-col size="21" >  <ion-button [routerLink]="['/home']"><img src="assets/BusNowLogo_Transparente.png" alt="Logo de la Compañía" style="height: 60px"></ion-button></ion-col>
+      </ion-buttons>
        <ion-buttons slot="start">
-       <ion-col size="21" >  <ion-button [routerLink]="['/mapas']">Mapas</ion-button></ion-col>
+       <ion-col size="21" >  <ion-button [routerLink]="['/home']">Inicio</ion-button></ion-col>
        <ion-col size="21"> <ion-button [routerLink]="['/rutas']">Rutas</ion-button></ion-col>
        </ion-buttons>
        <ion-buttons slot="end"> 

@@ -3,7 +3,6 @@ import { RouterLink } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 
-
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
