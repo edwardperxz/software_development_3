@@ -1,22 +1,26 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-        <ion-title>
-          <img src="assets/BusNowLogo.png" alt="Logo de la Compañía" style="height: 60px;">
-        </ion-title>
-      </ion-toolbar> <ion-buttons slot="end">
-        <ion-button>
-          <ion-icon slot="icon-only" name="search-outline"></ion-icon>
-          <ion-input placeholder="Search" type="text"></ion-input>
-        </ion-button>
-        <ion-button (click)="openMapas()">
-          <ion-label>Mapas</ion-label>
-        </ion-button>
-        <ion-button (click)="openRutas()">
-          <ion-label>Rutas</ion-label>
-        </ion-button>
-        <ion-button>
+    <ion-title>
+      <img src="assets/BusNowLogo.png" alt="Logo de la Compañía" style="height: 60px">
+    </ion-title>
+    <ion-buttons slot="end">
+
+      <ion-button>
+      <ion-item>
+        <ion-icon slot="icon-only" name="search-outline"></ion-icon>
+        <ion-input placeholder="Search" type="text"></ion-input>
+      </ion-item>
+      </ion-button>
+
+      <ion-button [routerLink]="['/mapas']">Mapas</ion-button>
+
+      <ion-button [routerLink]="['/rutas']">Rutas</ion-button>
+
+      <ion-button>
           <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
-        </ion-button>
+      </ion-button>
+      
       </ion-buttons>
+    </ion-toolbar> 
 </ion-header>
     

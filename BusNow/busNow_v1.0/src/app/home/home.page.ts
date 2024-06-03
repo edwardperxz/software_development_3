@@ -1,26 +1,19 @@
-import { Component, OnInit } from '@angular/core';
-import { Router, RouterModule } from '@angular/router';
+import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
-import { IonToolbar } from '@ionic/angular/standalone';
+import { HeaderComponent } from '../components/header/header.component';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss'],
+  selector: 'app-home',
+  templateUrl: './home.page.html',
+  styleUrls: ['./home.page.scss'],
   standalone: true,
-  imports: [RouterModule,IonicModule,IonToolbar]
+  imports: [RouterLink,IonicModule, HeaderComponent]
 })
-export class HeaderComponent  {
+export class HomePage  {
 
-  constructor(private router:Router) { }
+  constructor() { }
 
-  openMapas(){
-    this.router.navigate(['/mapas']);
-  }
-
-  openRutas(){
-    this.router.navigate(['/rutas']);
-  }
-
+  
 }
 
