@@ -43,9 +43,9 @@ Crear aplicaciones que incorporen herencia, polimorfismo, interfaces, bases de d
 ## Lista de Tareas:
 (En progreso...)
 
-1. **Tarea 1:** Taller sobre Herencia en Java.
-2. **Tarea 2:** Diseño de sitios web populares usando Figma (Tema: Shein).
-3. **Proyecto Final:** Estimador de llegadas para autobuses de ruta en Chiriqui, Panamá (BusNow).
+1. **Tarea 1:** Taller sobre Herencia en Java ([workshop_two](https://github.com/iE1000/software_development_3/tree/main/workshop_two)).
+2. **Tarea 2:** Diseño de sitios web populares usando Figma - Tema: Shein (chein).
+3. **Proyecto Final:** Estimador de llegadas para autobuses de ruta en Chiriqui, Panamá ([BusNow](https://github.com/iE1000/software_development_3/tree/main/BusNow/busNow_v1.0)).
 
 ## Directrices de Contribución
 
