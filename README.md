@@ -7,11 +7,12 @@
 
 ## Miembros del Grupo
 **Estudiantes:**
-- Edward Pérez
-- Jennifer Santamaría
-- Nevin Castillo
-- Alessandra Bonilla
-- Ana Daparte
+- Edward Pérez (Arquitecto)
+- Jennifer Santamaría (Desarrollo)
+- Nevin Castillo (Desarrollo)
+- Alessandra Bonilla (Diseño)
+- Ana Daparte (Diseño)
+- Jahir Campos (Base de Datos - No da DS3)
 
 ## Descripción del Curso
 
