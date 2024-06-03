@@ -1,26 +1,23 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      <img src="assets/BusNowLogo.png" alt="Logo de la Compañía" style="height: 60px">
-    </ion-title>
-    <ion-buttons slot="end">
-
-      <ion-button>
-      <ion-item>
-        <ion-icon slot="icon-only" name="search-outline"></ion-icon>
-        <ion-input placeholder="Search" type="text"></ion-input>
-      </ion-item>
-      </ion-button>
-
-      <ion-button [routerLink]="['/mapas']">Mapas</ion-button>
-
-      <ion-button [routerLink]="['/rutas']">Rutas</ion-button>
-
-      <ion-button>
-          <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
-      </ion-button>
-      
-      </ion-buttons>
-    </ion-toolbar> 
-</ion-header>
+<ion-header    [translucent]="true">
+  <ion-grid>
+   <ion-toolbar>
+     <ion-title slot="start">
+       <img src="assets/BusNowLogo_Transparente.png" alt="Logo de la Compañía" style="height: 60px">
+     </ion-title>
+       <ion-buttons slot="start">
+       <ion-col size="21" >  <ion-button [routerLink]="['/mapas']">Mapas</ion-button></ion-col>
+       <ion-col size="21"> <ion-button [routerLink]="['/rutas']">Rutas</ion-button></ion-col>
+       </ion-buttons>
+       <ion-buttons slot="end"> 
+         <ion-item lines="none">
+           <ion-icon  name="search-outline"></ion-icon>
+           <ion-input placeholder=" Busqueda" type="text"></ion-input>
+         </ion-item>
+         <ion-button>
+           <ion-icon name="menu-outline"></ion-icon>
+         </ion-button>
+       </ion-buttons>
+   </ion-toolbar>
+ </ion-grid>
+ </ion-header>
     
