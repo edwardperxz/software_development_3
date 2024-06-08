@@ -1,11 +1,11 @@
-package com.api_rest_aOp.Controllers;
+package com.api_rest.api_rest_DS3.Controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class arithmeticsOperations {
+public class aOpController {
     @GetMapping("/suma")
     public double suma(@RequestParam double a, @RequestParam double b) {
         return a+b;
