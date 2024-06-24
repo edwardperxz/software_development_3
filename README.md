@@ -44,10 +44,10 @@ Crear aplicaciones que incorporen herencia, polimorfismo, interfaces, bases de d
 ## Lista de Tareas:
 (En progreso...)
 
-1. **[Tarea 1](https://github.com/iE1000/software_development_3/tree/main/workshops/workshop_two):** Taller sobre Herencia en Java .
+1. **[Tarea 1](https://github.com/edwardperxz/software_development_3/tree/main/workshops/workshop_two):** Taller sobre Herencia en Java .
 2. **Tarea 2:** Diseño de sitios web populares usando Figma - Tema: Shein (chein).
-3. **[Tarea 3](https://github.com/iE1000/software_development_3/tree/main/workshops/workshop_three):** Taller de API Rest con Spring Boot (Operaciones Matematicas).
-4. **[Proyecto Final](https://github.com/iE1000/software_development_3/tree/main/BusNow/busNow_v1.0):** Estimador de llegadas para autobuses de ruta en Chiriqui, Panamá.
+3. **[Tarea 3](https://github.com/edwardperxz/software_development_3/tree/main/workshops/workshop_three):** Taller de API Rest con Spring Boot (Operaciones Matematicas).
+4. **[Proyecto Final](https://github.com/edwardperxz/software_development_3/tree/main/BusNow/busNow_v1.0):** Estimador de llegadas para autobuses de ruta en Chiriqui, Panamá.
 
 ## Directrices de Contribución
 
