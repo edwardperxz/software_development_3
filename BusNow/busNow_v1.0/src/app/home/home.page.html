@@ -21,14 +21,16 @@
 <body>
 <header class="header">
   <nav class="navbar">
-    <img src="logo.png" alt="image">
+    <a routerLink="/home">
+      <img src="../assets/BusNowLogo.png" alt="image">
+    </a>
     <div class="menu">
       <ul>
         <li><a href="#"><span>Home</span></a></li>
-        <li><a href="#">Rutas</a></li>
-        <li><a href="#">Mapa</a></li>
-        <li><a href="#">Terminales</a></li>
-        <a href="#" class="btn">Perfil</a>
+        <li><a href="./rutas">Rutas</a></li>
+        <li><a href="./map">Mapa</a></li>
+        <li><a href="./terminales">Terminales</a></li>
+        <a href="./perfil" class="btn">Perfil</a>
         <li class="buscar"><input class="ion-searchbar" placeholder="Buscar..." type="text">
         </li>
       </ul>

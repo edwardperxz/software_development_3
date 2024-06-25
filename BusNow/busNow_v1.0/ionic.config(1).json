@@ -1,7 +1,0 @@
-{
-  "name": "busNow_v1.0",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular-standalone"
-}
