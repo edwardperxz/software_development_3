@@ -1,11 +1,55 @@
-<ion-header [translucent]="true">
-  <app-header></app-header>
-</ion-header>
+<!DOCTYPE html>
+<html lang="en">
 
-<ion-content [fullscreen]="true">
-   <div id="container">
-    <ion-title>
-      <img src="assets/BusNowLogo_Transparente.png" alt="Logo de la Compañía" style="height: 200px;">
-    </ion-title>
+<!-- aqui inicia el header-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bus Now</title>
+  <link rel="stylesheet" href="home.page.scss">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNsLGu9YAA1QvwINks4PhcE1QSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXge10g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<!--la barra de menu-->
+<body>
+<header class="header">
+  <nav class="navbar">
+    <a routerLink="/home">
+      <img src="../assets/BusNowLogo.png" alt="image">
+    </a>
+    <div class="menu">
+      <ul>
+        <li><a href="#"><span>Home</span></a></li>
+        <li><a href="./rutas">Rutas</a></li>
+        <li><a href="./map">Mapa</a></li>
+        <li><a href="./terminales">Terminales</a></li>
+        <a href="./perfil" class="btn">Perfil</a>
+        <li class="buscar"><input class="ion-searchbar" placeholder="Buscar..." type="text">
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<!-- el mucho texto-->
+  <div class="main">
+    <h1> Hola, Somos el equipo desarrollador de <span>BusNow</span></h1>
+    <h4>Desarrolladores Amateur</h4>
+    <p> Creamos esta plataforma para la facilitación de movilidad <br>
+      en el trasporte público. Es un proyecto innovador que invita <br>
+      al usuario a navegar de manera precisa a través de diversas <br>
+      herramientas para la optención de información que necesite.</p>
+
   </div>
-</ion-content>
+</header>
+</body>
+
+<!-- acá termina el header-->
+
+</html>
