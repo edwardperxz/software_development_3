@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonBackButton, IonImg, IonSearchbar, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonFooter, IonHeader, IonInput, IonItem, IonLabel, IonTitle, IonToolbar } from '@ionic/angular/standalone';
+import { RouterLink } from '@angular/router';
 
 
 @Component({
@@ -25,7 +26,8 @@ import { IonBackButton, IonImg, IonSearchbar, IonButton, IonButtons, IonCard, Io
     IonFooter,
     IonButtons,
     IonSearchbar, 
-    IonImg
+    IonImg,
+    RouterLink
   ],
 })
 export class HeaderComponent {}
