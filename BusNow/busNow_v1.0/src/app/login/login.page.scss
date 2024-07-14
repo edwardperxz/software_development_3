@@ -1,0 +1,69 @@
+.login-center{ /* Centrado del Login */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 75vh;
+}
+
+
+.login-size{ /* Tamaño y color de fondo Login */
+   width: 200%;
+   max-width: 270px;
+   background-color: black;
+}
+
+
+.button-center-ingresar{ /* Centrado del boton ingresar*/
+   display: flex;
+   justify-content: center;
+   margin-top: 1rem;
+}
+
+.color-ingresar{
+   --background:#FF7F00;
+}
+
+.button-center-register{ /* Centrado del boton registrate*/
+   display: flex;
+   justify-content: center;
+   margin-top: 1rem;
+   transform: translateX(2px);
+}
+
+
+.button-text span{ /* Centrado del texto "¿No tienes una cuenta?" */
+   margin-right: 15px;
+}
+
+.register-center{
+   display: flex;
+   justify-content: center;
+   margin-top: 1px;
+   height: 15vh;
+}
+
+.color-registrarse{
+   --background:#FF7F00;
+   color:#000000;
+   --box-shadow: 4px 6px 7px 0 rgb(0, 0, 0, 0.80);
+}
+
+.texto-sombra{
+   text-shadow: 2px 4px 3px rgb(0, 0, 0);
+}
+
+ion-content {
+   --background: none;
+ }
+
+ ion-item{
+   --background:none;
+ }
+
+.content{
+   background-image: url('/assets/Sun.jpg');
+   width: 100%;
+   height: 100vh;
+   background-size: cover;
+   background-position: center;
+}
