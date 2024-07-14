@@ -5,7 +5,7 @@ export const routes: Routes = [
   { path: '', component: HomePage },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'login',
     pathMatch: 'full',
   },
   {
