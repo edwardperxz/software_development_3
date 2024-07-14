@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormBuilder, FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonFooter, IonHeader, IonInput, IonItem, IonLabel, IonTitle, IonToolbar } from '@ionic/angular/standalone';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-registro',
@@ -9,7 +10,8 @@ import { IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardH
   styleUrls: ['./registro.page.scss'],
   standalone: true,
   imports: 
-  [IonContent, 
+  [
+    IonContent, 
     IonHeader, 
     IonTitle, 
     IonToolbar, 
@@ -26,7 +28,7 @@ import { IonBackButton, IonButton, IonButtons, IonCard, IonCardContent, IonCardH
     IonCard,
     IonCardTitle,
     ReactiveFormsModule,
-    IonFooter
+    RouterModule
   ]
 })
 export class RegistroPage implements OnInit 
@@ -43,6 +45,7 @@ export class RegistroPage implements OnInit
 
   ngOnInit() {
   }
+  
 }
 
 

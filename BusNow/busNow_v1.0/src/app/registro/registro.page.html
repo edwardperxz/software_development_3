@@ -1,13 +1,13 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
+      <ion-back-button defaultHref="/login"></ion-back-button>
     </ion-buttons>
     <ion-title>Registro</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding">
+<ion-content class="ion-padding content">
   <div class="register-center">
     <ion-card class="register-size">
       <ion-card-header class="ion-text-center">
@@ -27,14 +27,23 @@
 
           <ion-item>
             <ion-label position="floating">Confirmar contraseña</ion-label>
-            <ion-input formControlName="password" type="password"></ion-input>
+            <ion-input formControlName="confirmPassword" type="password"></ion-input>
           </ion-item>
-          <br>
+
           <div class="button-center-register">
-            <ion-button>Registrarse</ion-button>
+            <ion-button expand="block" class="color-registrarse" type="submit">Registrarse</ion-button>
           </div>
         </form>
       </ion-card-content>
     </ion-card>
+  </div>
+
+  <div class="login-center ion-text-center">
+    <div class="button-text">
+      <span class="texto-sombra">¿Ya tienes una cuenta?</span>
+      <div class="button-center-login">
+        <ion-button class="color-login" [routerLink]="['/login']">Inicia sesión</ion-button>
+      </div>
+    </div>
   </div>
 </ion-content>

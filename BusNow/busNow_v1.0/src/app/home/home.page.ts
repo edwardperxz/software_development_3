@@ -11,5 +11,4 @@ import { HeaderComponent } from '../components/header/header.component';
   imports: [IonicModule, RouterModule, HeaderComponent]
 })
 export class HomePage {
-  constructor() {}
 }
