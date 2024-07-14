@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Inicio de sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding content">
+  <div class="login-center">
+    <ion-card class="login-size">
+      <ion-card-header class="ion-text-center">
+        <ion-card-title>Login</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <form [formGroup]="formularioLogin">
+          <ion-item>
+            <ion-label position="floating">Nombre</ion-label>
+              <ion-input formControlName="nombre"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Contraseña</ion-label>
+              <ion-input formControlName="password" type="password"></ion-input>
+          </ion-item>
+
+        </form>
+        <br>
+        <div class="button-center-ingresar">
+            <ion-button class="color-ingresar">Ingresar</ion-button>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  <div class="register-center">
+    <ion-buttons>
+      <div class="button-text">
+        <span class="texto-sombra">¿No tienes una cuenta?</span>
+        <div class="button-center-register">
+          <ion-button class="color-registrarse" [routerLink]="['/registro']">Registrate</ion-button>
+        </div>
+      </div>
+    </ion-buttons>
+  </div>
+</ion-content>
+
+
+
+
+
