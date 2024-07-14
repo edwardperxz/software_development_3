@@ -5,13 +5,13 @@ import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/stan
 import { HeaderComponent } from '../components/header/header.component';
 
 @Component({
-  selector: 'app-rutas',
-  templateUrl: './rutas.page.html',
-  styleUrls: ['./rutas.page.scss'],
+  selector: 'app-terminales',
+  templateUrl: './terminales.page.html',
+  styleUrls: ['./terminales.page.scss'],
   standalone: true,
   imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, HeaderComponent]
 })
-export class RutasPage implements OnInit {
+export class TerminalesPage implements OnInit {
 
   constructor() { }
 
