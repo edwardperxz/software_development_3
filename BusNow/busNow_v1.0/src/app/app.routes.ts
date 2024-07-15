@@ -28,14 +28,10 @@ export const routes: Routes = [
   },
   {
     path: 'login',
-<<<<<<< HEAD
     loadComponent: () => import('./login/login.page').then( m => m.LoginComponent)
   },
   {
     path: 'register',
     loadComponent: () => import('./registro/register.page').then( m => m.RegisterComponent)
-=======
-    loadComponent: () => import('./login').then( m => m.LoginPage)
->>>>>>> 221680811bd3585f308015f23d641ed4a0793548
   },
 ]
