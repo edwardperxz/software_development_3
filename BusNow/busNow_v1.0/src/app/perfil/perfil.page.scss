@@ -1,0 +1,114 @@
+.content{
+    background-image: url('/assets/Sun.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+ }
+
+.card{
+    background-color: #000000f2;
+    border: 2px solid #272626;
+    display: flex;
+    flex-direction: column;
+    margin: 3em;
+    border-radius: 10px;
+    padding: 1em;
+    padding-left: 2em;
+}
+
+.sign-out-button{
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #FF7F00;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.card-options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.icon-tabler{
+    font-size: 2rem;
+    color: #421a43;
+}
+ 
+.card-title{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.card-subtitle{
+    width: 50%;
+}
+
+.reactive-section{
+    display: flex;
+    gap: 1em;
+    width: 100%;
+}
+
+.user-card-info{
+    background-color: #272626;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 1em;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.button-switch-card{
+    background-color: #272626;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    width: 40%;
+    justify-content: center;
+    text-align: center;
+}
+
+.button-card-title{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.users-info{
+    color: #dd7537;
+}
+
+.info-combo h3{
+    line-height: .5em;
+}
+
+.button-card{
+    background-color: #FF7F00;
+    border-radius: 100%;
+    justify-content: center;
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+    padding: 50px;
+    width: 40%;
+    height: 50%;
+}
+
+.button-card.active {
+    background-color: green;
+  }
