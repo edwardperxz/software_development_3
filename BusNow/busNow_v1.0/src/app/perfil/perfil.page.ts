@@ -1,7 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
+import { Component} from '@angular/core';
+import { IonContent, IonApp, IonButton, IonInput, IonLabel } from '@ionic/angular/standalone';
 import { HeaderComponent } from '../components/header/header.component';
 
 @Component({
@@ -9,8 +7,12 @@ import { HeaderComponent } from '../components/header/header.component';
   templateUrl: './perfil.page.html',
   styleUrls: ['./perfil.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, HeaderComponent]
+  imports: [IonLabel, IonInput, IonButton, IonContent, IonApp, HeaderComponent]
 })
 export class PerfilPage {
+  isActive: boolean = false;
 
+  toggleButton() {
+    this.isActive = !this.isActive;
+  }
 }

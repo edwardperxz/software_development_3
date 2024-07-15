@@ -1,1 +1,47 @@
-<app-header></app-header>
+<ion-app>
+  <app-header></app-header>
+  <ion-content>
+    <section class="content">
+      <section class="card">
+        <div class="card-options">
+          <div class="header-icon">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="40"  height="40"  viewBox="0 0 24 24"  fill="currentColor"  class="icon icon-tabler icons-tabler-filled icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 2a5 5 0 1 1 -5 5l.005 -.217a5 5 0 0 1 4.995 -4.783z" /><path d="M14 14a5 5 0 0 1 5 5v1a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-1a5 5 0 0 1 5 -5h4z" /></svg>
+          </div>
+            <div>
+              <button class="sign-out-button">Cerrar sesión</button>
+            </div>
+        </div>
+        <h1 class="card-title">Inicio de Sesión</h1>
+        <h5 class="card-subtitle">Recuerde sederle el acceso de ubicacion de su dispositivo al sitio web para hacer el seguimiento correspondiente.</h5>
+
+        <section class="reactive-section">
+          <div class="user-card-info">
+            <div class="info-combo">
+              <h3 class="users-info">Nombre:</h3>
+              <h3> Jorge Rosmario De Los Palotes</h3>
+            </div>
+            <div class="info-combo">
+              <h3 class="users-info">E-mail:</h3>
+              <h3> jorgitopalotero&#64;gmail.com</h3>
+            </div>
+            <div class="info-combo">
+              <h3 class="users-info">Número de Teléfono:</h3>
+              <h3> +507 6314-3578</h3>
+            </div>
+            <div class="info-combo">
+              <h3 class="users-info">Terminal Afiliada:</h3>
+              <h3> Terminales David Panamá</h3>
+            </div>
+          </div>
+          <div class="button-switch-card">
+            <h1 class="button-card-title">Iniciar Ruta</h1>
+            <h2 class="button-card-subtitle">Presione para comenzar:</h2>
+            <button class="button-card" [class.active]="isActive" (click)="toggleButton()">
+              {{ isActive ? 'Activo' : 'Inactivo' }}
+            </button>
+          </div>
+        </section>
+      </section>
+    </section>
+  </ion-content>
+</ion-app>
