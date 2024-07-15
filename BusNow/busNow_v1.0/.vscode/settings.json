@@ -2,5 +2,6 @@
   "typescript.preferences.autoImportFileExcludePatterns": ["@ionic/angular/common", "@ionic/angular"],
   "githubPullRequests.ignoredPullRequestBranches": [
     "main"
-]
+],
+"java.compile.nullAnalysis.mode": "automatic"
 }
