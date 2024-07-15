@@ -3,9 +3,12 @@
     width: 100%;
     height: 100vh;
     background-size: cover;
-    background-position: center;
-    padding: 10px;
+    background-position: center;  
  }
+
+ ion-content{
+    --background:none;
+}  
 
 .card{
     background-color: #000000f2;
@@ -20,10 +23,15 @@
 
 .sign-out-button{
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 50px;
     background-color: #FF7F00;
-    font-weight: bold;
+    color: #000000;
+    font-weight: bolder;
     font-size: 1.4rem;
+}
+
+.sign-out-button:hover{
+    background-color: #f50029;
 }
 
 .card-options{
@@ -36,14 +44,14 @@
     display: flex;
     justify-content: center;
     margin-top: 1rem;
-    background-color: white;
+    background-color:#FF7F00;
     border-radius: 50%;
     padding: 10px;
 }
 
 .icon-tabler{
     font-size: 2rem;
-    color: #421a43;
+    color: #000000;
 }
  
 .card-title{
@@ -98,14 +106,14 @@
 }
 
 .button-card{
-    background-color: #FF7F00;
+    background-color: #f50029;
     border-radius: 100%;
     justify-content: center;
     text-align: center;
-    font-size: large;
+    font-size: 18px;
     font-weight: bolder;
     padding: 50px;
-    width: 40%;
+    width: 39%;
     height: 50%;
 }
 
