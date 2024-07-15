@@ -28,11 +28,10 @@ export const routes: Routes = [
   },
   {
     path: 'login',
-    loadComponent: () => import('./login/login.page').then( m => m.LoginPage)
+    loadComponent: () => import('./login/login.page').then( m => m.LoginComponent)
   },
   {
-    path: 'registro',
-    loadComponent: () => import('./registro/registro.page').then( m => m.RegistroPage)
+    path: 'register',
+    loadComponent: () => import('./registro/register.page').then( m => m.RegisterComponent)
   },
-
 ]
