@@ -9,4 +9,6 @@ import { HeaderComponent } from '../components/header/header.component';
   standalone: true,
   imports: [IonContent, IonApp, HeaderComponent]
 })
-export class MapPage {}
+export class MapPage{
+
+}

@@ -6,13 +6,13 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
 import { provideAuth, getAuth } from '@angular/fire/auth';
 import { environment } from '../environments/environment.prod';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './routing.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [
+  imports: [HttpClientModule,
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
