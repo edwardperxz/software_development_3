@@ -16,5 +16,5 @@ export const  environment = {
     storageBucket: "YOUR_STORAGE_BUCKET",
     messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
     appId: "YOUR_APP_ID"
-  } as FirebaseConfig // Asigna el objeto a la interfaz FirebaseConfig
+  } as FirebaseConfig
 };
